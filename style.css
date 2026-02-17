@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "angel wish";
+    src: url(/font/AngelWish.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -17,7 +24,9 @@ header {
     position: relative;
 }
 
-header section.header-text {
+.header-text {
+    font-family: "angel wish", cursive;
+    font-size: 48px;
     padding: 40px;
     position: absolute;
     top: 50%;
@@ -54,14 +63,21 @@ nav ul {
 }
 
 nav a {
+    font-family: "angel wish", cursive;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
-    padding: 10px 20px;
+    font-size: 40px;
+    padding: 10px 40px;
     border: 1px solid rgb(172, 0, 0);
     border-radius: 5px;
     background-color: #71000062;
+}
+
+nav a:hover {
+    background-color: rgb(172, 0, 0);
+    color: white;
+    transition: 0.3s;
 }
 
 
@@ -116,11 +132,30 @@ nav a {
     
 }
 
+.about h2 {
+    font-family: "angel wish", cursive;
+    font-size: 32px;
+    font-weight: bold;
+}
+
 footer {
     background-color: #000;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #71000024;
+}
+
+table, th, td {
+    border: 1px solid #710000;
+    padding: 20px;
+    text-align: left;
 }
 
