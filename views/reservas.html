@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Reservas - Demo</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/reservas.css">
+</head>
+<body>
+    <header>
+    <img src="https://t4.ftcdn.net/jpg/03/20/49/25/360_F_320492530_2aeFG0eKU03OM20OD4eLzRte0K6xpw9i.jpg" alt="" id="banner">
+    <section class="header-text">
+        <h1>Clases disponibles</h1>
+    </section>
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/views/reservas.html">Reservar</a></li>
+            <li><a href="clases.html">Clases disponibles</a></li>
+            <li><a href="../views/inicioSesion.html">Iniciar sesión</a></li>
+            
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <div class="about">
+            <h2>Reservas</h2>
+            <p>Gestión de reservas de clases (concepto demo, no funcional en servidor).</p>
+        </div>
+
+        <section class="blocks">
+            <!-- Se agregó background-color: #fff; para que el formulario se vea como un cuadro blanco -->
+            <form id="reservaForm" class="about" style="background-color: #fff;">
+                <label>
+                    Clase
+                    <input type="text" id="clase" placeholder="Ej: Spinning" required>
+                </label>
+
+                <label>
+                    Instructor
+                    <input type="text" id="instructor" placeholder="Ej: Laura" required>
+                </label>
+
+                <div class="form-row">
+                    <label class="label-flex">
+                    Fecha
+                    <input type="date" id="fecha" required>
+                    </label>
+                    <label class="label-flex">
+                    Hora
+                    <input type="time" id="hora" required>
+                    </label>
+                </div>
+
+                <label>
+                    Plazas
+                    <input type="number" id="plazas" min="1" value="1" required>
+                </label>
+
+                <div class="button-row">
+                    <button type="submit" class="btn-submit">Reservar</button>
+                    <button type="button" id="clearAll" class="btn-clear">Borrar todo</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="reservas-section">
+            <h3 class="reservas-titulo">Reservas Programadas</h3>
+            <table id="reservasTable">
+                <thead>
+                <tr>
+                    <th>Clase</th>
+                    <th>Instructor</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Plazas</th>
+                    <th>Acciones</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="../public/Js/reservas.js"></script>
+    <footer>
+        <p>&copy; 2026 Softgym. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
