@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "angel wish";
+    src: url(/font/AngelWish.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #000;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.header-text {
+    font-family: "angel wish", cursive;
+    font-size: 48px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 100%;
+}
+
+#banner {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(50%);
+    position: relative;
+    z-index: 1;
+}
+
+main {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+nav a {
+    font-family: "angel wish", cursive;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 10px 40px;
+    border: 1px solid rgb(172, 0, 0);
+    border-radius: 5px;
+    background-color: #71000062;
+}
+
+nav a:hover {
+    background-color: rgb(172, 0, 0);
+    color: white;
+    transition: 0.3s;
+}
+
+
+.about {
+    width: 60%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: linear-gradient(135deg,#000 60%, rgb(108, 0, 0) );
+    border: 1px solid rgb(172, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.blocks {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.blocks li {
+    background-color: #71000062;
+    padding: 10px;
+
+    font-weight: bold;
+    font-size: 27px;
+    border: 1px solid rgb(172, 0, 0);
+    border-radius: 5px;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 200px;
+    width: 220px;
+}
+
+.about ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+    
+}
+
+.about h2 {
+    font-family: "angel wish", cursive;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #71000024;
+}
+
+table, th, td {
+    border: 1px solid #710000;
+    padding: 20px;
+    text-align: left;
+}
+
